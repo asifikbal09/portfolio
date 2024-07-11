@@ -1,0 +1,13 @@
+.icon {
+    border-width: 2px;
+    border-color: aliceblue;
+}
+
+.icon:hover {
+    border-color: #28e98c;
+    color: #28e98c;
+}
+
+.text-shadow{
+    filter: drop-shadow(0 0 0.55rem #28e98c);
+}

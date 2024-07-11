@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1f1f1f;
+}
+
+.scrollbar-hide::-webkit-scrollbar{
+display: none;
+}
+
+
+
+.primary-color {
+  color: #f8f9fa;
+}
+
+.secondary-color {
+  color: #999999;
+}
+
+.tertiary-color {
+  color: #28e98c;
+}
+
+.animate-spin{
+  animation: spin 10s linear infinite;
+}
+.btn-outline {
+  background-color: #28e98c;
+  border: 2px solid #28e98c;
+  color: black;
+}
+
+.border{
+  border: 2px solid #999999;
+
+}
+
+.border:hover{
+  border: 2px solid #28e98c;
+}
+
+.btn-outline:hover {
+  border-color: #28e98c;
+  color: #28e98c;
+  background-color: transparent;
+}
+
+.text-animation {
+  animation: animation 10s ease infinite;
+}
+
+@keyframes animation {
+
+  0%,
+  100% {
+    top: 0;
+  }
+
+  20% {
+    top: 0;
+  }
+
+  25% {
+    top: -60px
+  }
+
+  45% {
+    top: -60px;
+  }
+
+  50% {
+    top: -120px;
+  }
+
+  70% {
+    top: -120px;
+  }
+
+  75% {
+    top: -180px;
+  }
+
+  95% {
+    top: -180px;
+  }
+}
