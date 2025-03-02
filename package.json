@@ -11,8 +11,11 @@
   },
   "dependencies": {
     "@types/aos": "^3.0.7",
+    "@types/file-saver": "^2.0.7",
     "aos": "^3.0.0-beta.6",
+    "file-saver": "^2.0.5",
     "localforage": "^1.10.0",
+    "lucide-react": "^0.477.0",
     "match-sorter": "^6.3.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

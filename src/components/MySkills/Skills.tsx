@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 import { FaJs, FaNode, FaReact, FaShapes } from "react-icons/fa";
 import SingleSkill from "./SingleSkill";
 import {
+  SiDocker,
   SiExpress,
   SiMongoose,
   SiPostgresql,
@@ -76,16 +77,22 @@ const Skills = () => {
           percentage="70"
         />
         <SingleSkill
-          dataAos="fade-down"
+          dataAos="fade-right"
           icon={<SiPostgresql />}
           name="Postgres"
           percentage="66"
         />
         <SingleSkill
-          dataAos="fade-left"
+          dataAos="fade-up"
           icon={<SiPrisma />}
           name="Prisma"
-          percentage="70"
+          percentage="55"
+        />
+        <SingleSkill
+          dataAos="fade-down"
+          icon={<SiDocker />}
+          name="Prisma"
+          percentage="30"
         />
       </div>
     </div>
