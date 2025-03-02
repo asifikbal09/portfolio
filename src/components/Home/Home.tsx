@@ -1,7 +1,6 @@
 import Button from "../button/Button";
-import { FaArrowDown, FaHome } from "react-icons/fa";
+import { FaArrowDown, FaDownload, FaHome } from "react-icons/fa";
 import myProjects from "./../../assets/my-project.png"
-import { AiOutlineDownload } from "react-icons/ai";
 import { saveAs } from 'file-saver';
 
 const Home = () => {
@@ -40,14 +39,17 @@ const Home = () => {
       </div>
    
               <button onClick={handleResumeDownloader} className="btn btn-outline rounded-3xl p-3">
-                  <AiOutlineDownload /> Download Resume
+              <FaDownload /> Download Resume
               </button>
           
       <div className="flex justify-center md:justify-end md:px-32">
+        <a href="#projects">
       <div className="relative flex justify-center items-center border w-fit p-16 rounded-full">
+
         <img className="animate-spin absolute" src={myProjects} alt="" />
         <FaArrowDown className="text-5xl animate-bounce"/>
       </div>
+      </a>
       </div>
     </div>
   );

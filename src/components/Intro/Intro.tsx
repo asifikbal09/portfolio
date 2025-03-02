@@ -9,7 +9,7 @@ const Intro = () => {
       <div className="flex  justify-between items-center">
         <h1 className="font-bold text-3xl  primary-color">ASIF</h1>
         <p className="font-semibold text-md primary-color ">
-          Framer Designer <br /> & Developer
+          MERN Stack <br />  Developer
         </p>
       </div>
       <div className="flex flex-col justify-center items-center">

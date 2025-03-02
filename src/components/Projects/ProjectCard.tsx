@@ -1,6 +1,7 @@
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Github, ExternalLink, Code } from "lucide-react"
+import Aos from "aos"
 
 
 interface ProjectCardProps {
@@ -14,10 +15,15 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ title, description, image, technologies, githubLink, liveLink }: ProjectCardProps) => {
   const [isHovered, setIsHovered] = useState(false)
-
+ useEffect(() => {
+        Aos.init({
+          duration: 1500,
+        });
+      }, []);
   return (
     <div
       className="card bg-[#1e2124] shadow-xl overflow-hidden transition-all duration-300 hover:shadow-[0_0_15px_rgba(46,213,115,0.3)]"
+      data-aos="fade-up"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
