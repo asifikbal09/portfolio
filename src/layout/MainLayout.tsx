@@ -1,4 +1,5 @@
 import Contact from "../components/Contact/Contact";
+import EducationSection from "../components/Education/EducationSection";
 import Home from "../components/Home/Home";
 import Intro from "../components/Intro/Intro";
 // import Intro from "../components/Intro/Intro";
@@ -14,6 +15,7 @@ const MainLayout = () => {
           <Home />
           <Skills />
           <Projects />
+          <EducationSection/>
           <Contact />
         </div>
         <label className=" w-full lg:hidden">
