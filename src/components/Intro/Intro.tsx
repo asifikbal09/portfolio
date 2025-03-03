@@ -2,6 +2,7 @@ import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import "./intro.css";
 import { AiOutlineMail } from "react-icons/ai";
 import myPhoto from "./../../assets/asif.jpg"
+import { Link } from "react-router-dom";
 const Intro = () => {
   const date = new Date();
   return (
@@ -29,15 +30,21 @@ const Intro = () => {
           </p>
         </div>
         <div className="flex gap-2 m-5">
+            <Link target="blank" to={"https://github.com/asifikbal09"} >
           <div className="rounded-full p-3 w-fit text-xl icon">
             <FaGithub />
           </div>
+            </Link>
+            <Link target="blank" to={"https://www.linkedin.com/in/md-asif-ikbal09/"} >
           <div className=" rounded-full p-3 w-fit text-xl icon">
             <FaLinkedin />
           </div>
+          </Link>
+          <Link target="blank" to={"https://www.instagram.com/asif_ikbal_limon/"} >
           <div className=" rounded-full p-3 w-fit text-xl icon">
             <FaInstagram />
           </div>
+          </Link>
         </div>
 
           <a href="#contact" className="w-full">

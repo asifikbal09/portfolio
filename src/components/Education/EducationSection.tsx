@@ -1,16 +1,20 @@
 import { GraduationCap, Calendar, MapPin, School } from "lucide-react"
 import Button from "../button/Button"
 import { FaPenNib } from "react-icons/fa"
+import Aos from "aos";
 
 const EducationSection = () => {
+  Aos.init({
+    duration: 1500,
+  });
   return (
-    <div className="py-10">
+    <div className="p-1 md:p-5 py-10">
        <Button icon={<FaPenNib />} section="Education"></Button>
       <h3 data-aos="fade-up" className="text-5xl primary-color mb-5">
         My <span className="tertiary-color ">Education</span>
       </h3>
 
-      <div className="card bg-[#1e2124] shadow-xl p-6 max-w-3xl">
+      <div data-aos="fade-up" className="card bg-[#1e2124] shadow-xl p-6 ">
         <div className="flex items-start gap-4">
           <div className="p-3 bg-[#2ed573]/10 rounded-full">
             <School className="w-8 h-8 text-[#2ed573]" />

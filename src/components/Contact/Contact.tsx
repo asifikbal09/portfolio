@@ -19,7 +19,7 @@ const Contact = () => {
             <div className="flex flex-col w-full">
               <label
                 htmlFor="name"
-                data-aos="fade-right"
+                data-aos="fade-up"
                 className="text-sm primary-color p-2 font-semibold"
               >
                 Full Name<span className="text-red-500">*</span>
@@ -29,13 +29,13 @@ const Contact = () => {
                 type="text"
                 id="name"
                 placeholder="Your Full Name"
-                data-aos="fade-right"
+                data-aos="fade-up"
               />
             </div>
             <div className="flex flex-col w-full">
               <label
                 htmlFor="email"
-                data-aos="fade-left"
+                data-aos="fade-up"
                 className="text-sm primary-color p-2 font-semibold"
               >
                 Email<span className="text-red-500">*</span>
@@ -45,7 +45,7 @@ const Contact = () => {
                 type="text"
                 id="email"
                 placeholder="Your email address"
-                data-aos="fade-left"
+                data-aos="fade-up"
               />
             </div>
           </div>

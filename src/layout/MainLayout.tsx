@@ -1,3 +1,4 @@
+import CertificationSection from "../components/Certification/Certification";
 import Contact from "../components/Contact/Contact";
 import EducationSection from "../components/Education/EducationSection";
 import Home from "../components/Home/Home";
@@ -16,13 +17,14 @@ const MainLayout = () => {
           <Skills />
           <Projects />
           <EducationSection/>
+          <CertificationSection/>
           <Contact />
         </div>
         <label className=" w-full lg:hidden">
           <Intro />
         </label>
       </div>
-      <div className="drawer-side scrollbar-hide lg:mx-5">
+      <div className="drawer-side  scrollbar-hide lg:mx-5">
         <Intro />
       </div>
     </div>

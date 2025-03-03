@@ -1,15 +1,15 @@
 import Button from "../button/Button";
 import { FaArrowDown, FaDownload, FaHome } from "react-icons/fa";
 import myProjects from "./../../assets/my-project.png"
-import { saveAs } from 'file-saver';
+// import { saveAs } from 'file-saver';
 
 const Home = () => {
   const handleResumeDownloader = () => {
-    // const link = document.createElement("a");
-    // link.href = "/Asif_Ikbal_Resume.pdf";
-    // link.download = "Asif_Ikbal_Resume.pdf";
-    // link.click();
-    saveAs("./public/backend-resume.pdf", "Backend-resume-of-Md-Asif-Ikbal.pdf");
+    const link = document.createElement("a");
+    link.href = `${window.location.origin}/backend-resume.pdf`;
+    link.download = "backend-resume.pdf";
+    link.click();
+  //  await saveAs("https://resume-asif-ikbal.tiiny.site/", "Backend-resume-of-Md-Asif-Ikbal.pdf");
   };
   return (
     <div className="p-1 md:p-5">
