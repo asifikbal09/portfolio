@@ -91,8 +91,8 @@ const Skills = () => {
         <SingleSkill
           dataAos="fade-down"
           icon={<SiDocker />}
-          name="Prisma"
-          percentage="30"
+          name="Docker"
+          percentage="40"
         />
       </div>
     </div>
