@@ -14,20 +14,20 @@ const Contact = () => {
     email:string
     message:string
   }
-
+const url = import.meta.env.URL
   const {
     register,
     handleSubmit,
     reset,
     formState: { errors },
   } = useForm<Inputs>()
-
+console.log(errors)
   const onSubmit: SubmitHandler<Inputs> = async(data) => {
     
     const toastId = toast.loading('Sending...');
 
     try {
-      const res = await fetch('http://localhost:5000/contact', {
+      const res = await fetch(url, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
@@ -126,7 +126,7 @@ const Contact = () => {
               placeholder="Write your message here..."
             ></textarea>
           </div>
-          <button type="submit"  className="btn btn-outline w-full rounded-3xl p-3">
+          <button type="submit" data-aos="fade-up" className="btn btn-outline w-full rounded-3xl p-3">
             SEND MESSAGE
           </button>
         </form>
