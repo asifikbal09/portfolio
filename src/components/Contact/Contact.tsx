@@ -14,7 +14,7 @@ const Contact = () => {
     email:string
     message:string
   }
-const url = import.meta.env.URL
+const url = import.meta.env.VITE_URL
   const {
     register,
     handleSubmit,
@@ -25,7 +25,7 @@ console.log(errors)
   const onSubmit: SubmitHandler<Inputs> = async(data) => {
     
     const toastId = toast.loading('Sending...');
-
+console.log({urlLink:url})
     try {
       const res = await fetch(url, {
         method: 'POST',
@@ -126,7 +126,7 @@ console.log(errors)
               placeholder="Write your message here..."
             ></textarea>
           </div>
-          <button type="submit" data-aos="fade-up" className="btn btn-outline w-full rounded-3xl p-3">
+          <button type="submit" className="btn btn-outline w-full rounded-3xl p-3">
             SEND MESSAGE
           </button>
         </form>
